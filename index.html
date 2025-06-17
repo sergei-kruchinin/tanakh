@@ -1,0 +1,951 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>On-Line Bible in Russian https://onlinebible.github.io</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<STYLE TYPE="TEXT/CSS">
+<!--
+ul.indent {  vertical-align: middle; list-style-image: url(Images/BDBLUE.GIF); clear: left; text-align: left;}
+ul.square {  vertical-align: middle; list-style-image: url(Images/bullet1.gif); clear: left; text-align: left;}
+ul {  vertical-align: middle; list-style-image: url(Images/bdgold.gif); text-align: left;}
+.container {overflow: auto; height: 95%;}
+tr a:hover {TEXT-DECORATION: none;}
+td {vertical-align: middle;}
+.button {
+	height: 25px; margin: 0px 15px 0px 0px; BACKGROUND: #ffcc33; BORDER-BOTTOM: #cc9933 2px solid; BORDER-LEFT: #ffff99 2px solid; BORDER-RIGHT: #cc9933 2px solid; BORDER-TOP: #ffff99 2px solid; COLOR: #003366; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+-->
+</STYLE>
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Библия Он-Лайн</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#whatsolb">О программе</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Скачать</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+<P align=left>&nbsp;</P>
+<P align=left>&nbsp;</P>
+<H2 align=center><FONT face=Arial><B>Библия Он-Лайн (On-Line Bible) — компьютерная программа 
+для профессиональной работы с текстом Библии </B></FONT></H2>
+<IMG height=241 hspace=40 src="Images/biblsoft.JPG" width=241 align=left>
+<BLOCKQUOTE style="MARGIN-LEFT: 50%;">
+<P align=left><FONT 
+face="Times New Roman" size=3><I>"Стандарт, по которому судят</I></FONT><FONT 
+size=3><I> </I></FONT><FONT face="Times New Roman" size=3><I>все остальные программы 
+  для изучения Библии"</I></FONT><FONT face=Arial size=2><B>.<BR>
+  Кэй 
+Холл, Служба Макинтош</B></FONT></P>
+<P align=left><FONT size=3><I>"</I></FONT><FONT face="Times New Roman" 
+size=3><I>При исследованиях я постоянно пользуюсь Библией Он-Лайн. Это наиболее 
+полезный</I></FONT><FONT size=3><I> </I></FONT><FONT face="Times New Roman" 
+size=3><I>и полный</I></FONT><FONT size=3><I> </I></FONT><FONT 
+face="Times New Roman" size=3><I>инструмент для изучения, созданный для 
+компьютера".<BR></I></FONT><FONT face=Arial size=2><B>Др. Кейт Вибе, Пастор 
+Евангелической Церкви </B></FONT></P>
+</BLOCKQUOTE>
+<P align=left>&nbsp;</P>
+<P align=left>&nbsp;</P>
+<UL class="indent">
+	<LI><A HREF="#whatsolb"><B>ЧТО ТАКОЕ БИБЛИЯ ОН-ЛАЙН</B></A> </LI>
+	<LI><A HREF="#progshell"><B>ПРОГРАММНАЯ ОБОЛОЧКА</B></A> </LI>
+        <LI><A HREF="#bibletexts"><B>МОДУЛИ НА КОМПАКТ-ДИСКЕ — ТЕКСТЫ БИБЛИИ</B></A> </LI>
+        <LI><A HREF="#comments"><B>МОДУЛИ НА КОМПАКТ-ДИСКЕ — КОММЕНТАРИИ И ДРУГИЕ МАТЕРИАЛЫ</B></A> </LI>
+	<LI><A HREF="#sysreq"><B>СИСТЕМНЫЕ ТРЕБОВАНИЯ И ФОРМА ПОСТАВКИ</B></A> </LI>
+	<LI><A HREF="#ScrShot"><B>Скриншоты</B></A> </LI>
+	<LI><A HREF="#download"><B>МОДУЛИ ДЛЯ ЗАГРУЗКИ</B></A> </LI>
+	<LI><A HREF="#DLCD"><B>Скачать Update CD самостоятельно</B></A> </LI>
+</UL>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - whatsolb-->
+    <section id="whatsolb" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+  <H3 ALIGN=center>ЧТО ТАКОЕ БИБЛИЯ ОН-ЛАЙН</H3>
+  <P><FONT SIZE=3>Это известнейшая программа для изучения Библии, первая версия которой появилась еще 
+	в 1987 году. Сейчас Библия Он-Лайн позволяет профессионально работать с текстом Библии, электронными 
+	словарями, комментариями и т.п. (поиск, параллельные места, формирование списков стихов, импорт и 
+	экспорт текстов и др.), а также составлять собственные комментарии, лексиконы, темы с использованием 
+	возможностей гипертекста на 9 языках, в том числе русском и украинском. <BR>
+	На ее компакт-диске — 75 текстов Священного Писания и более 100 книг комментариев и другого справочного 
+	материала. Общая фактическая стоимость текстов, включенных в состав диска, превышает 1000 USD. Кроме 
+	того, это <B>первая профессиональная компьютерная программа для изучения Библии, полностью переведенная 
+	на русский и украинский языки.</B><BR>
+	Библия Он-Лайн состоит из программной оболочки (около 1.2 Мб) и более чем 520 Мб добавляемых модулей 
+ — тексты Библии, комментарии, лексиконы, темы, графика.</FONT></P>
+                </div>
+            </div>
+        </div>
+  <P ALIGN=right><A HREF="#intro"><FONT SIZE=3>Вернуться к оглавлению</FONT></A></P>
+    </section>
+
+    <!-- About Section - progshell -->
+    <section id="progshell" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+  <H3 ALIGN=center>ПРОГРАММНАЯ ОБОЛОЧКА</H3>
+  <UL>
+	<LI><FONT SIZE=3>9 языковых версий — английская, немецкая, французская, испанская, итальянская, голландская, 
+	  португальская, а также <B>русская и украинская</B>. Русская версия работает как абсолютно русская 
+	  программа, сделанная в России: русский интерфейс (даже работают русские "горячие клавиши"!), контекстно-зависимая 
+	  справка с более чем 300 темами, для книг Библии и гипертекстовых ссылок можно использовать русские 
+	  названия книг Библии.</FONT> 
+	<LI><FONT SIZE=3>Автоматическая установка необходимых шрифтов для поддержки версий на языках, не относящихся 
+	  к западноевропейским; при переходе с языка на язык программа автоматически подключает нужный шрифт, 
+	  раскладку клавиатуры, а для поиска по древнееврейскому тексту — набор справа налево.</FONT> 
+	<LI><FONT SIZE=3>Развитой поиск по текстам с применением логических операторов (И, ИЛИ, НЕ, оператор 
+	  расстояния, маски и др.). Возможность поиска по нескольким текстам одновременно, по комментариям, 
+	  темам, лексиконам (не только текстам Библии).</FONT> 
+	<LI><FONT SIZE=3>644000 (!) параллельных мест.</FONT> 
+	<LI><FONT SIZE=3>Номера Стронга в Русском Синодальном переводе.<BR>
+	  </FONT><FONT SIZE=2><I>Возле каждого слова стоит номер, который показывает, какое слово стояло в 
+	  греческом или ивритском оригинале. Дважды щелкнув мышью по номеру, вы вызываете на экран статью 
+	  из соответствующего лексикона с подробным толкованием всего спектра значений и можете проверить, 
+	  какие еще возможны варианты перевода данного места, даже не зная древних языков. Номера Стронга 
+	  в Русском Синодальном переводе — уникальная черта Библии Он-Лайн, это плод полугодовой работы двух 
+	  специалистов, выполненной специально для данного проекта.</I></FONT> 
+	<LI><FONT SIZE=3>Возможность написания собственных комментариев и тематических словарей с использованием 
+	  гипертекстовых ссылок на любом из 9 языков, на которые переведена оболочка, а также вставок на древнееврейском 
+	  и древнегреческом.</FONT> 
+	<LI><FONT SIZE=3>Поддержка наборов символов (character sets), что позволяет без проблем работать под 
+	  Windows NT на славянских языках и копировать тексты в приложения MS Office 97.</FONT> 
+	<LI><FONT SIZE=3>Распечатка текстов и вывод в файл в формате RTF.</FONT> 
+	<LI><FONT SIZE=3>Единственная в мире программа на платформе IBM PC для изучения Библии, имеющая поддержку 
+	  для слепых. Программа была успешна опробована с генератором Speaking Mouse на русском языке.</FONT> 
+	</LI>
+  </UL>
+                </div>
+            </div>
+        </div>
+  <P ALIGN=right><A HREF="#intro"><FONT SIZE=3>Вернуться к оглавлению</FONT></A></P>
+    </section>
+
+    <!-- About Section - bibletexts -->
+    <section id="bibletexts" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+  <H3 ALIGN=center>МОДУЛИ НА КОМПАКТ-ДИСКЕ</H3>
+<h4 align=left><I>ТЕКСТЫ БИБЛИИ:</I></h4>
+<ul>
+<li>Русский Синодальный перевод в редакции 1956 г. с номерами Стронга.</li>
+<li>Украинский перевод 1940 г. Ивана Огиенко.</li>
+<li>Английский язык — 22 текста Библии: 1769 KJV with Strong's, footnotes and variation readings, 1995 21st century KJV, 1982 NKJV, 1993 Green's modern KJV, 1947 RSV, 1989 NRSV, 1889 Darby, 1833 Webster, 1995 Revised Webster with Strong's, 1898 Young's Literal translation, 1984 NIV British/American (locked), 1901 ASV, 1977 NASV British/American (locked), 1912 Weymouth NT, 1993 Green's literal translation, 1769 Oxford Apocrypha,1947 Revised Apocrypha, 1965 Bible in Basic English (особая версия английского языка, сокращенная до 850 слов), 1917 Jewish Publication OT, 1997 Interlinear Greek-English NT with Strong's;</li>
+<li>Оригинальные языки Библии: древнегреческий — 3 текста (1550/1894 Textus Receptus with Strong's fully parsed, 1991 Byzantyne Majority with Strong's fully parsed, 1881 Westcott-Hort Greek Text with variant readings from the UBS 3-4/Nestle 26-27 editions, with Strong's fully parsed); древнееврейский — 2 текста (Biblia Hebraica Stuttgartensia и BHS с морфологическим анализом);</li>
+<li>Немецкий язык — 7 текстов Библии;</li> <li>французский язык — 3 текста;</li> <li>голландский язык — 6 текстов;</li> <li>латинский — Вульгата;</li> <li>новогреческий — 1 текст (полный текст Библии с диакритикой);</li> <li>тексты на языках Скандинавии (финский, датский, норвежский), Восточной Европы (венгерский, румынский, албанский), романских языках (2 испанских, 2 итальянских, 2 португальских), восточных языках (китайский, арабский, турецкий, вьетнамский, 3 индонезийских), языках Океании (2 филиппинских, креольский, маори), на суахили и языке шуар (Эквадор).</li>
+</ul>
+                </div>
+            </div>
+        </div>
+  <P ALIGN=right><A HREF="#intro"><FONT SIZE=3>Вернуться к оглавлению</FONT></A></P>
+    </section>
+
+    <!-- About Section - comments -->
+    <section id="comments" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+<h4 align=left><I>КОММЕНТАРИИ И ДРУГИЕ МАТЕРИАЛЫ:</I></h4>
+<ul>
+<li>17 комментариев на английском языке — Matthew Henry, John Jill, A.T.Robertson, C.H.Spurgeon, John Wesley, Adam Clarke и др.; 6 комментариев на немецком языке, 3 на французском, 8 — на голландском.</li>
+<li>тематические справочники на английском языке — Easton's Bible Distionary, Naves, Thompson, Torrey и др. Всего на диск включено более 100 книг: библейские словари, основные доктрины, катехизисы, материалы библейской археологии и т.п..</li>
+<li>греческий лексикон by Smith Thayer и древнееврейский лексикон by Brown, Briggs, Driver, Gesenius — толкование каждого слова оригинальных текстов Библии на английском языке.</li>
+<li>Более 1000 (!) библейских карт и рисунков на христианские темы.</li>
+</ul>
+                </div>
+            </div>
+        </div>
+  <P ALIGN=right><A HREF="#intro"><FONT SIZE=3>Вернуться к оглавлению</FONT></A></P>
+    </section>
+
+    <!-- About Section - CD-->
+    <section id="sysreq" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+<H3 align=center><FONT face=Arial><B>СИСТЕМНЫЕ ТРЕБОВАНИЯ И ФОРМА 
+ПОСТАВКИ</B></FONT></H3>
+<UL>
+  <LI><FONT size=3>Библия Он-Лайн — единственная программа для изучения Библии, 
+  которая имеет версии для <B>всех платформ </B>PC: DOS, Windows 3.11, 95, 98, 
+  NT, 2000, ME, XP, Vista, Windows 7, 8, 10, Macintosh. <B>Системные требования:</B> версия для DOS — 
+  любая IBM PC XT и выше, версия для Windows 3.11 — 2 Мб RAM (4 Мб желательно), 
+  версия для Windows 95 — любая машина. Требуется CD-ROM с любой скоростью. Для 
+  показа графики нужен монитор VGA, поддерживающий 16 цветов или лучше.</FONT> 
+  <LI><FONT size=3>В Казахстане продается на <B>1-ом DVD и 1-ом компакт-диске </B>общей 
+  стоимостью <B>70 долларов США</B>, что в 4-5 раз меньше, чем стоимость других 
+  программ аналогичного класса. Цены при покупке: 1-й комплект — 70 USD, 2-й комплект — 
+  скидка 10%, 3-й комплект — скидка 20%, 4 и более — условия оговариваются 
+  отдельно. Миссиям, религиозным организациям/общинам — бесплатно.</FONT> 
+  <LI><FONT size=3>Состав комплекта: 1-й диск — оригинальный DVD Библии 
+  Он-Лайн для Windows, Macintosh, Linux, 2-й — <B>Update CD</B>, который включает в себя:</FONT>
+  <UL class="indent">
+    <LI><FONT size=3>Самые последние версии программной оболочки и модулей для 
+    Windows с русскими и украинскими текстами;</FONT> 
+    <LI><FONT size=3>Русскую версию для DOS, версию для Macintosh с русским 
+    текстом;</FONT> 
+    <LI><FONT size=3>Набор программ shareware и freeware для христиан в 
+    России:</FONT>
+    <UL class="square">
+      <LI><FONT size=3>Русская Библия в формате Help for Windows</FONT> 
+      <LI><FONT size=3>Русская Библия в формате HTML</FONT> 
+      <LI><FONT size=3>Программа "Цитата из Библии": поиск по всему тексту 
+      Библии, всключая неканонические книги, параллельные места</FONT> 
+      <LI><FONT size=3>Screen Saver с цитатами из русской Библии</FONT> 
+      <LI><FONT size=3>Программа для расчета православной Пасхи и переходящих 
+      праздников на русском и английском языках.</FONT> 
+      <LI><FONT size=3>Программы для работы с языками Библии:</FONT>
+      <UL class="square">
+        <LI><FONT size=3>Wingreek for Windows — утилита для работы с 
+        древнегреческим и ивритом в MS Word</FONT> 
+        <LI><FONT size=3>Classical Text Editor by Stefan Hagel — полноценный 
+        редактор, специально разработанный для комментирования библейских 
+        текстов (поддержка иврита и древнегреческого, сноски, индексы и 
+        т.п.)</FONT> 
+        <LI><FONT size=3>Multikey — универсальный драйвер клавиатуры и набор 
+        фонтов для работы с библейскими текстами </FONT></LI></UL></LI></UL></LI></UL>
+  <table>
+  <tr>
+  <td class="normal">
+  <IMG SRC="Images/AVION.GIF" WIDTH="201" HEIGHT="77" HSPACE="40" ALIGN="CENTER" VSPACE="15">
+  <CENTER><a href="ORDER.HTM" class="Button" title="Заказ CD-диска с библейскими компьютерными программами"><B>Заказать Update CD</B></A></center>
+  </td> 
+  <td class="normal"><H3 ALIGN="LEFT">Компакт-диск Update CD</H3>
+  <P>Высылается бесплатно <B>Update CD</B> (компакт диск для обновления), который содержит самую последнюю версию программы и все дополнительные модули на русском языке, а также ряд христианских программ shareware и freeware.
+<BR CLEAR="ALL">Щелкните <A HREF="KATALOG4.HTM" CLASS="HoMe"><IMG SRC="Images/NAVHELP.GIF" ALT="?"><B> ЗДЕСЬ</B></A> чтобы узнать подробнее какие программы входят в компакт-диск <B>Update CD</B>.</td>
+  </tr>
+  </table>  
+                </div>
+            </div>
+        </div>
+<P ALIGN="right"><A HREF="#intro"><FONT SIZE="3">Вернуться к оглавлению</FONT></A></P>
+    </section>
+
+    <!-- About Section - ScrShot -->
+    <section id="ScrShot" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+  <H3 ALIGN="CENTER">Скриншоты</H3>
+  <BLOCKQUOTE> Данные скриншоты сняты с русского интерфейса программы Библия Он-Лайн 1.20 (Millennium 
+	edition), октябрь 2002 г. На СД имеются английский, русский и другие интерфейсы. 
+	<P>
+		<A HREF="Images/COMMENT.JPG"><IMG SRC="Images/COMMENT-S.JPG" WIDTH="96" HEIGHT="72" BORDER="0"></A> 
+	        <A HREF="Images/GENERALVIEW.JPG"><IMG SRC="Images/GENERALVIEW-S.JPG" WIDTH="96" HEIGHT="72" BORDER="0"></A> 
+	        <A HREF="Images/PARAL.JPG"><IMG SRC="Images/PARAL-S.JPG" WIDTH="96" HEIGHT="72" BORDER="0"></A> 
+	        <A HREF="Images/SEARCH.JPG"><IMG SRC="Images/SEARCH-S.JPG" WIDTH="96" HEIGHT="72" BORDER="0"></A> 
+	</P> 
+	        <A HREF="Images/STRONGNUM.JPG"><IMG SRC="Images/STRONGNUM-S.JPG" WIDTH="96" HEIGHT="72" BORDER="0"></A> 
+	        <A HREF="Images/VERSIONS.JPG"><IMG SRC="Images/VERSIONS-S.JPG" WIDTH="96" HEIGHT="72" BORDER="0"></A>
+	        <A HREF="Images/FLOATING.JPG"><IMG SRC="Images/FLOATING-S.JPG" WIDTH="96" HEIGHT="72" BORDER="0"></A> 
+	        <A HREF="Images/IMAGES.JPG"><IMG SRC="Images/IMAGES-S.JPG" WIDTH="96" HEIGHT="72" BORDER="0"></A>
+  </BLOCKQUOTE>
+                </div>
+            </div>
+        </div>
+  <P ALIGN="right"><A HREF="#intro"><FONT SIZE="3">Вернуться к оглавлению</FONT></A></P>
+    </section>
+
+    <!-- Services Section -->
+    <section id="download" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+  <H3 ALIGN="CENTER">МОДУЛИ ДЛЯ ЗАГРУЗКИ</H3>
+  <P> 
+  <TABLE BORDER=2 BORDERCOLOR=#00FFFF CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
+	<TR> 
+	  <TH BGCOLOR=#66CCFF WIDTH="40"> <IMG SRC="Images/OLB.GIF" ALIGN="center"> </TH>
+	  <TD BGCOLOR=#66CCFF> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 8pt" COLOR=#000066> 
+		Программа Библия Он-Лайн разрабатывается Ларри Пирсом (Larry Pierce).<BR>
+		Отличительная особенность:
+		- имеются версии под DOS, Windows, Macintosh;
+		- сообщения программной оболочки могут быть переведены на любой язык. </FONT> </TD>
+	</TR>
+	<TR> 
+	  <TH COLSPAN="3" BGCOLOR='66CCFF'> 
+            <br>
+            <p ALIGN="CENTER">&nbsp;&nbsp; Модули с поддержкой Юникода (Unicode Version)</p>
+		<TABLE BORDER="0" BORDERCOLOR=#ffffff COLS="2" ALIGN="left" WIDTH="100%">
+                  <TR><TD><FONT face=Arial><B><I>ПРОГРАММНАЯ ОБОЛОЧКА:</I></B></FONT></TD></TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/OLBStartPack500.exe">
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213247', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer; TEXT-DECORATION: none" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="Рекомендуется, если вы загружаете программу впервые. Содержание: программа с русским интерфейсом, Русский Синодальный перевод с номерами Стронга, King James version 1769 (KJV) Англ., Библейский словарь В.П.Вихлянцева, греческий и еврейский словари Стронга на английском языке, параллельные места (комментарий Treasure of Scripture Knowledge)." HEIGHT="32"> 
+			  <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> Стартовый комплект Библии Он-Лайн 5.00 (Unicode Version), ноябрь 2015 г. (26.9 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/OLB500Upd_ru.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213242', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="Русская версия. Внимание! Это только программная оболочка, без текстов, которая не будет работать, если у вас не установлен хотя бы один текст Библии." HEIGHT="32"> 
+			  <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> Обновление 
+			  программы Библии Он-Лайн 5.00 (Unicode Version), ноябрь 2015 г. (7.18 Mb) </FONT> </TD>
+			</A> </TR>
+                  <TR><TD><FONT face=Arial><B><I>ТЕКСТЫ БИБЛИИ:</I></B></FONT></TD></TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/RST.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213081', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="RST 2014/12/13 — компилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Русский Синодальный перевод 1876/1956 (2.67 Mb) </FONT> </TD>
+			</A> </TR>
+                  <TR><TD><FONT face=Arial><B><I>КОММЕНТАРИИ И ДРУГИЕ МАТЕРИАЛЫ:</I></B></FONT></TD></TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/dictru.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213075', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="dictru 2014/12/22 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Русский Библейский словарь В.П.Вихлянцева, октябрь 2001 г. (751 Kb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/dic.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213140', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="dic 2014/12/20 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Библейский словарь  Вихлянцев В.П., сентябрь 2009 г. (10.6 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/nus.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213071', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="nus 2014/12/22 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Библейский словарь Эрик Нюстрем (1.19 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/_DAL.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213078', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="_DAL 2014/12/22 — некомпилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  Толковый словарь живого великорусского языка В. Даль (9.16 Mb)</FONT></TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/bro.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213082', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="bro 2014/12/24 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Библейская Энциклопедия Брокгауза (2.32 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/nik.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213074', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="nik 2014/12/22 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Библейская Энциклопедия Архимандрита Никифора (1.75 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/_KRA.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213065', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="_KRA 2014/12/22 — некомпилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  Коран. Перевод И.Ю. Крачковского (823 Kb)</FONT></TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/_OSM.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213060', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="_OSM 2014/12/22 — некомпилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  Коран. Перевод Османова Магомед-Нури Османовича (964 Kb)</FONT></TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/_KATECHEO.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213064', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="_KATECHEO 2014/12/22 — некомпилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  ПРОСТРАННЫЙ ХРИСТИАНСКИЙ КАТЕХИЗИС (186 Kb)</FONT></TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/_CANON.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213067', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="_CANON 2014/12/22 — некомпилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  Каноны Православной Церкви (260 Kb)</FONT></TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/_APOKRYPH.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213070', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="_APOKRYPH 2014/12/20 — некомпилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  Некоторые тексты христианских апокрифов (480 Kb)</FONT></TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/_DORE.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213213', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="_DORE 2014/12/22 — некомпилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  Графический модуль &quot;Гравюры Гюстава Доре&quot; (49.6 Mb)</FONT></TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/MAPRUS.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213072', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="MAPRUS 2014/12/23 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Карты и рисунки (590 Kb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Unicode/RUSLIB.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%213069', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="RusLib 2015/01/02 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Русская библиотека (97.9 Kb) </FONT> </TD>
+			</A> </TR>
+		</TABLE>
+	  </TH>
+	</TR>
+	<TR> 
+	  <TH COLSPAN="3" BGCOLOR='66CCFF'> 
+            <br>
+            <p ALIGN="CENTER">&nbsp;&nbsp; Модули без поддержки Юникода (Non-Unicode)</p>
+		<TABLE BORDER="0" BORDERCOLOR=#ffffff COLS="2" ALIGN="left" WIDTH="100%">
+                  <TR><TD><FONT face=Arial><B><I>ПРОГРАММНАЯ ОБОЛОЧКА:</I></B></FONT></TD></TR>
+		  <TR><A HREF="http://www.bible.ru/download/OLBStartPack111.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.location='http://www.bible.ru/download/OLBStartPack111.exe'"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="Рекомендуется, если вы загружаете программу впервые. Содержание: программа с русским/украинским/английским интерфейсом, Русский Синодальный перевод с номерами Стронга, Библейский словарь В.П.Вихлянцева, греческий и еврейский словари Стронга на русском языке, шрифтовая поддержка." HEIGHT="32"> 
+			  <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> Стартовый комплект Библии Он-Лайн 1.11 (Millennium Edition), март 2002 г. (4.9 Mb) </FONT> </TD>
+			</A> </TR>
+		  <TR><A HREF="http://www.bible.ru/download/OLB111Upd.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.location='http://www.bible.ru/download/OLB111Upd.exe'"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="Русская, украинская и английская версии. Внимание! Это только программная оболочка, без текстов, которая не будет работать, если у вас не установлен хотя бы один текст Библии." HEIGHT="32"> 
+			  <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> Обновление 
+			  программы Библии Он-Лайн 1.11 (Millennium Edition), март 2002 г. (1.8 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/olb111r.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212452', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="11 июня 2009 г." HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Скачать ZIP-архив с русским переводом программы Библия Он-Лайн 1.11 (58.8 Kb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/OLB120Upd.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212451', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="Английская, нидерландская, французская, немецкая, итальянская, испанская, португальская и русская версии. Внимание! Это только программная оболочка, без текстов, которая не будет работать, если у вас не установлен хотя бы один текст Библии." HEIGHT="32"> 
+			  <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> Обновление 
+			  программы Библии Он-Лайн 1.20 (Millennium Edition), октябрь 2002 г. (7.13 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/OLB120Ur.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212449', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="Сокращённый вариант — только русская версия. Внимание! Это только программная оболочка, без текстов, которая не будет работать, если у вас не установлен хотя бы один текст Библии." HEIGHT="32"> 
+			  <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> Обновление 
+			  программы Библии Он-Лайн 1.20 (Millennium Edition), октябрь 2002 г. (4.47 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/olb120r.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212450', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="22 июля 2009 г." HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Скачать ZIP-архив с русским переводом программы Библия Он-Лайн 1.20 (594 Kb) </FONT> </TD>
+			</A> </TR>
+                  <TR><TD><FONT face=Arial><B><I>ТЕКСТЫ БИБЛИИ:</I></B></FONT></TD></TR>
+		  <TR><A HREF="http://www.bible.ru/download/RST_Strongs.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.location='http://www.bible.ru/download/RST_Strongs.exe'"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="RST 2007/10/28 — компилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Русский Синодальный перевод (1876/1956) с номерами Стронга (2.8 Mb) </FONT> </TD>
+			</A> </TR>
+		  <TR><A HREF="http://www.bible.ru/download/UkrOgienko.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.location='http://www.bible.ru/download/UkrOgienko.exe'"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="UKRAINE 2007/10/28 — компилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Украинский перевод Ивана Огиенко 1940 (2.1 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/BHS.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212472', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="BHS 2002/03/19 — компилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Древнеевр. ВЗ Biblia Hebraica Stuttgartensia (1.38 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/BHM.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212473', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="BHM 2007/10/28 — компилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Древнеевр. ВЗ Biblia Hebraica Stuttgartensia с морфологическим разбором (1.33 Mb) </FONT> 
+			</TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/LXX.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212458', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="LXX 2007/10/28 — компилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Греческая Септуагинта под ред. Альфреда Ральфса (1.86 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/TR.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212441', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="TR 2007/10/28 — компилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Древнегреч. НЗ Textus Receptus 1550 (931 Kb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/BYZ.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212469', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="BYZ 2007/10/28 — компилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Древнегреч. НЗ текст большинства рукописей 1991 (912 Kb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/WH.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212438', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="WH 2007/10/28 — компилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Древнегреч. НЗ изд. Весткотт-Хорт 1881 (918 Kb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/MGREEK.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212454', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="MGREEK 2008/09/14 — компилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Греческий современный перевод Библии (1.87 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/Peshitta.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212443', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="PESHITTA 2000/03/08 — компилированный модуль" HEIGHT="32"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  1905 Syriac Peshitta New Testament – Пешитта (Сирийский Новый Завет) (792 Kb)</FONT></TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/GDANSK.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212466', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="GDANSK 2006/12/19 — компилированный модуль" HEIGHT="32"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Gdansk 1910 — Polish Bible (1.90 Mb)</FONT></TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/IGNT.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212463', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="IGNT 2002/09/12 — компилированный модуль" HEIGHT="32"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Interlinear Greek NT – Интерлинеарный англо-греческий НЗ (1.12 Mb)</FONT></TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/JPS.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212464', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="JPS 2000/06/21 — компилированный модуль" HEIGHT="32"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Jewish Publication Society – Раввинистический перевод Ветхого Завета 1917 г. (1.47 Mb)</FONT></TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/BBE.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212474', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="BBE 1998/03/03 — компилированный модуль" HEIGHT="32"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  1949/1964 Bible In Basic English (1.67 Mb)</FONT></TD>
+			</A> </TR>
+                  <TR><TD><FONT face=Arial><B><I>КОММЕНТАРИИ И ДРУГИЕ МАТЕРИАЛЫ:</I></B></FONT></TD></TR>
+		  <TR><A HREF="http://www.bible.ru/download/TSK_XREF.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.location='http://www.bible.ru/download/TSK_XREF.exe'"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="TSK 2007/10/28 — компилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Параллельные места (комментарий Treasure of Scripture Knowledge) (2.8 Mb) </FONT> </TD>
+			</A> </TR>
+		  <TR><A HREF="http://www.bible.ru/download/DictRus.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.location='http://www.bible.ru/download/DictRus.exe'"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="dictru 2006/10/28 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Русский Библейский словарь В.П.Вихлянцева, октябрь 2001 г. (652 Kb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/dic.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212467', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="dic 2013/06/07 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Библейский словарь  Вихлянцев В.П., сентябрь 2009 г. (10.5 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/nus.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212453', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="nus 2006/09/30 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Библейский словарь Эрик Нюстрем (962 Kb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/DAL.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212471', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="**** DAL 2009/05/31 — компилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  Толковый словарь живого великорусского языка В. Даль (10.1 Mb)</FONT></TD>
+			</A> 
+			<TD ALIGN="right" WIDTH="10%"><BUTTON class="button" 
+			onClick="window.open('olbsrc.shtml?2445&Толковый словарь живого великорусского языка В. Даль&7,83 M&DAL', 'Ssylka')" STYLE="cursor:hand; cursor:pointer" 
+			TITLE="_DAL 2006/11/26 — некомпилированный модуль">Источник</BUTTON></TD>
+		  </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/bro.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212470', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="bro 2006/10/30 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Библейская Энциклопедия Брокгауза (1.97 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/nik.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212456', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="nik 2006/09/30 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Библейская Энциклопедия Архимандрита Никифора (1.48 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/KRA.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212459', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="**** KRA 2009/05/31 — компилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  Коран. Перевод И.Ю. Крачковского (870 Kb)</FONT></TD>
+			</A> 
+			<TD ALIGN="right" WIDTH="10%"><BUTTON class="button" 
+			onClick="window.open('olbsrc.shtml?2434&Коран. Перевод И.Ю. Крачковского&731 K&KRA', 'Ssylka')" STYLE="cursor:hand; cursor:pointer" 
+			TITLE="_KRA 2006/12/4 — некомпилированный модуль">Источник</BUTTON></TD>
+		  </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/OSM.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212444', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="**** OSM 2009/05/31 — компилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  Коран. Перевод Османова Магомед-Нури Османовича (1.01 Mb)</FONT></TD>
+			</A> 
+			<TD ALIGN="right" WIDTH="10%"><BUTTON 	class="button" 
+			onClick="window.open('olbsrc.shtml?2431&Коран. Перевод Османова Магомед-Нури Османовича&855K&OSM', 'Ssylka')" STYLE="cursor:hand; cursor:pointer" 
+			TITLE="_OSM 2006/12/4 — некомпилированный модуль">Источник</BUTTON></TD>
+		  </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/KATECHEO.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212461', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="**** KATECHEO 2009/05/31 — компилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  ПРОСТРАННЫЙ ХРИСТИАНСКИЙ КАТЕХИЗИС (205 Kb)</FONT></TD>
+			</A> 
+			<TD ALIGN="right" WIDTH="10%"><BUTTON class="button" 
+			onClick="window.open('olbsrc.shtml?2435&ПРОСТРАННЫЙ ХРИСТИАНСКИЙ КАТЕХИЗИС&172K&KATECHEO', 'Ssylka')" STYLE="cursor:hand; cursor:pointer" 
+			TITLE="_KATECHEO 2006/11/26 — некомпилированный модуль">Источник</BUTTON></TD>
+		  </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/CANON.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212468', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="**** CANON 2009/06/11 — компилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  Каноны Православной Церкви (257 Kb)</FONT></TD>
+			</A> 
+			<TD ALIGN="right" WIDTH="10%"><BUTTON class="button" 
+			onClick="window.open('olbsrc.shtml?2436&Каноны Православной Церкви&232K&CANON', 'Ssylka')" STYLE="cursor:hand; cursor:pointer" 
+			TITLE="_CANON 2009/06/11 — некомпилированный модуль">Источник</BUTTON></TD>
+		  </TR>
+
+		  <TR><A HREF="http://cid-http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/APOKRYPH.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212475', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="**** APOKRYPH 2009/06/08 — компилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  Некоторые тексты христианских апокрифов (437 Kb)</FONT></TD>
+			</A> 
+			<TD ALIGN="right" WIDTH="10%"><BUTTON class="button" 
+			onClick="window.open('olbsrc.shtml?2437&Некоторые тексты христианских апокрифов&418 K&APOKRYPH', 'Ssylka')" STYLE="cursor:hand; cursor:pointer" 
+			TITLE="_APOKRYPH 2009/06/08 — некомпилированный модуль">Источник</BUTTON></TD>
+		  </TR>
+		  <TR><A HREF="http://www.bible.ru/download/StrongsRus.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.location='http://www.bible.ru/download/StrongsRus.exe'"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="GRKRUS & HEBRUS 2007/10/28 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Греческий и еврейский словари Стронга на русском языке, октябрь 2001 г. (840 Kb) </FONT> 
+			</TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/DORE.exe"> 
+			<TD
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212478', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="**** DORE 2009/05/30 — компилированный модуль" HEIGHT="32" WIDTH="90%"><FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR="000066"> 
+			  Графический модуль &quot;Гравюры Гюстава Доре&quot; (50.3 Mb)</FONT></TD>
+			</A> 
+			<TD ALIGN="right" WIDTH="10%"><BUTTON class="button" 
+			onClick="window.open('olbsrc.shtml?2462&Гравюры Гюстава Доре&49,7 M&DORE', 'Ssylka')" STYLE="cursor:hand; cursor:pointer" 
+			TITLE="_DORE 2006/11/26 — некомпилированный модуль">Источник</BUTTON></TD>
+		  </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/MAPRUS.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212455', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="MAPRUS 2008/12/09 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Карты и рисунки (1.18 Mb) </FONT> </TD>
+			</A> </TR>
+
+		  <TR><A HREF="http://cid-54128bbecc927494.onedrive.live.com/self.aspx/Общая/Библия Он-Лайн/LIBRUS.exe"> 
+			<TD  COLSPAN="2"
+   onMouseOver="bgColor='0099FF'"
+   onClick="window.open('https://onedrive.live.com/download.aspx?cid=54128BBECC927494&authKey=%21AC%5FttQ09eyfzO0s&resid=54128BBECC927494%212457', 'Ssylka')"
+   STYLE="cursor:hand; cursor:pointer" COLOR="000066"
+   onMouseOut="bgColor='66CCFF'"
+   ALIGN="left" TITLE="LIBRUS 2013/01/02 — некомпилированный модуль" HEIGHT="32"> <FONT FACE="Arial, Helvetica, sans-serif" STYLE="font-size: 10pt" COLOR=000066> 
+			  Русская библиотека (96.4 Kb) </FONT> </TD>
+			</A> </TR>
+		</TABLE>
+	  </TH>
+	</TR>
+  </TABLE>
+  <H4>Примите участие в проекте Библия Он-Лайн!</H4>
+  <P>Мы предлагаем всем, у кого есть в электронном виде тексты, графика и программы 
+shareware и freeware с христианскими текстами, принять участие в создании компакт-диска 
+с дополнительными модулями к Библии Он-Лайн.</P>
+                </div>
+            </div>
+        </div>
+  <P ALIGN="right"><A HREF="#intro"><FONT SIZE="3">Вернуться к оглавлению</FONT></A></P>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Техническая поддержка и сопровождение</h1>
+			<p align="left">Пользователи <i>Библии Он-Лайн</i> поддерживаются по электронной почте: <a href="mailto:&#77;&#105;&#99;&#104;&#97;&#101;&#108;&#49;&#57;&#55;&#50;&#64;&#109;&#97;&#105;&#108;&#46;&#114;&#117;">&#77;&#105;&#99;&#104;&#97;&#101;&#108;&#49;&#57;&#55;&#50;&#64;&#109;&#97;&#105;&#108;&#46;&#114;&#117;</a> и телефону в Павлодаре (7182) 60-80-52. 
+			<p align="left">Возможны также контакты по: 
+			<ul style="text-align: left;">
+				<li>WhatsApp: <a href="https://msng.link/o/?77055117124=wa">+7 (705) 5117124</a>;</li>
+				<li>Messenger: <a href="https://msng.link/o/?Michahel72=fm">Michahel72</a>;</li>
+				<li>Skype: <a href="https://msng.link/o/?Michael1972@mail.ru=sk">michahel_</a></li>
+			</ul>
+                </div>
+            </div>
+        </div>
+  <P ALIGN="right"><A HREF="#intro"><FONT SIZE="3">Вернуться к оглавлению</FONT></A></P>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
